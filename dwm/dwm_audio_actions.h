@@ -1,0 +1,6 @@
+    { 0, XF86XK_AudioRewind,       spawn, {.v = mpc_next_cmd} },
+    { 0, XF86XK_AudioForward,      spawn, {.v = mpc_prev_cmd} },
+    { 0, XF86XK_AudioPlay,         spawn, {.v = mpc_toggle_cmd} },
+    { 0, XF86XK_AudioMute,         spawn, {.v = audio_mute_toggle_cmd} },
+    { 0, XF86XK_AudioRaiseVolume,  spawn, {.v = audio_vol_up_cmd} },
+    { 0, XF86XK_AudioLowerVolume,  spawn, {.v = audio_vol_dn_cmd} },
