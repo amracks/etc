@@ -65,9 +65,9 @@ Mod1 F2 :Exec fbrun
 
 # volume settings, using common keycodes
 # if these don't work, use xev to find out your real keycodes
-176 :Exec amixer sset Master,0 1+
-174 :Exec amixer sset Master,0 1-
-160 :Exec amixer sset Master,0 toggle
+#176 :Exec amixer sset Master,0 1+
+#174 :Exec amixer sset Master,0 1-
+#160 :Exec amixer sset Master,0 toggle
 
 # current window commands
 Mod1 F4 :Close
@@ -141,6 +141,15 @@ Mod1 p :Exec dmenu_run
 Mod1 Shift Return :Exec urxvtc
 Control Mod1 Return :Exec urxvtc -name urxvtdark
 
+XF86AudioPlay        :Exec mpc toggle
+XF86AudioForward     :Exec mpc next
+XF86AudioRewind      :Exec mpc prev
+XF86AudioRaiseVolume :Exec amixer set Master 2+
+XF86AudioLowerVolume :Exec amixer set Master 2-
+XF86AudioMute        :Exec amixer set Master toggle
+
+XF86Sleep            :Exec sudo s2ram --force
+
 #Window Manipulation
 Mod4 v          :MaximizeVertical
 Mod4 h     	    :MaximizeHorizontal
@@ -150,8 +159,6 @@ Mod4 t          :ToggleDecor
 Mod4 s      	:Stick
 
 # MPC Music Commands
-XF86AudioPlay :Exec mpc toggle
-XF86AudioForward: Exec mpc next
 172         :ExecCommand mpc toggle
 121         :ExecCommand amixer set Master toggle
 122         :ExecCommand amixer sset Master,0 2-
