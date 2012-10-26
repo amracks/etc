@@ -14,7 +14,7 @@ xmodmap "/home/amarks/.Xmodmap"
 # wmnd &
 # wmsmixer -w &
 # idesk &
-xcompmgr &
+#xcompmgr &
 conky -d
 xset b off &
 . ~/.fehbg &
