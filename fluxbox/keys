@@ -140,6 +140,7 @@ Control Mod4 F11 :TakeToWorkspace 11
 #dwm keys
 Mod1 p :Exec dmenu_run
 Mod1 Shift Return :Exec urxvtc
+Control Mod1 Return :Exec urxvtc -name urxvtdark
 
 XF86AudioPlay        :Exec mpc toggle
 XF86AudioForward     :Exec mpc next

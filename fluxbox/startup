@@ -15,7 +15,7 @@ xmodmap "/home/amarks/.Xmodmap"
 # wmsmixer -w &
 # idesk &
 #xcompmgr &
-#conky -d
+conky -d
 xset b off &
 . ~/.fehbg &
 urxvtd -q -o -f &
