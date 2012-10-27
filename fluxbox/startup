@@ -14,10 +14,12 @@ xmodmap "/home/amarks/.Xmodmap"
 # wmnd &
 # wmsmixer -w &
 # idesk &
-conky -d
+#xcompmgr &
+#conky -d
 xset b off &
 . ~/.fehbg &
 urxvtd -q -o -f &
+#blueman-applet &
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
