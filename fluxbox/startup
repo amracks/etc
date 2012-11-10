@@ -19,7 +19,10 @@ conky -d
 xset b off &
 . ~/.fehbg &
 urxvtd -q -o -f &
-#blueman-applet &
+if [ `rc-status | grep bluetooth | wc -l` -gt 0 ];
+then
+    blueman-applet &
+fi
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
