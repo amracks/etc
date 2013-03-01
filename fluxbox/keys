@@ -167,7 +167,7 @@ Mod4 s      	:Stick
 167         :ExecCommand mpc next
 
 # Lock Screen
-Mod4 l          :ExecCommand alock -auth pam -bg shade:shade=30
+Mod4 l          :ExecCommand alock -auth pam -bg blank:color=black
 
 #Fluxbox Commands
 Mod1 Shift q :Reconfig

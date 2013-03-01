@@ -16,6 +16,7 @@ xmodmap "/home/amarks/.Xmodmap"
 # idesk &
 #xcompmgr &
 conky -d
+dropbox &
 xset b off &
 . ~/.fehbg &
 urxvtd -q -o -f &
