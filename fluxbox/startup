@@ -20,6 +20,10 @@ dropbox &
 xset b off &
 . ~/.fehbg &
 urxvtd -q -o -f &
+if [ `rc-status | grep bluetooth | wc -l` -gt 0 ];
+then
+    blueman-applet &
+fi
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
