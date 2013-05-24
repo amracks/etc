@@ -1,0 +1,49 @@
+app-editors/vim -X
+x11-terms/rxvt-unicode 256-color
+app-emulation/virtualbox qt4 extensions
+net-wireless/bluez test-programs
+mail-client/mutt doc imap smtp tokyocabinet
+media-video/mplayer faac faad
+media-video/ffmpeg faac
+dev-libs/libxml2 icu
+sci-libs/gdal curl doc fits geos gml hdf hdf5 netcdf ogdi postgres python -pdf
+net-misc/ntp debug
+app-text/acroread nsplugin
+sci-electronics/eagle doc
+sci-libs/hdf5 -threads szip
+app-emulation/wine gnutls
+
+#required by sys-fs/cryptsetup-1.4.1[static], required by cryptsetup (argument)
+=dev-libs/libgcrypt-1.4.6 static-libs
+#required by sys-fs/cryptsetup-1.4.1[static], required by cryptsetup (argument)
+=sys-apps/util-linux-2.20.1-r1 static-libs
+#required by sys-fs/cryptsetup-1.4.1[static], required by cryptsetup (argument)
+>=dev-libs/popt-1.16-r1 static-libs
+#required by sys-fs/cryptsetup-1.4.1[static], required by cryptsetup (argument)
+=dev-libs/libgpg-error-1.10 static-libs
+
+#required by sci-libs/gdal-1.8.1-r1, required by dev-db/postgis-2.0.0, required by postgis (argument)
+sys-libs/zlib minizip
+
+app-admin/conky imlib math rss curl mpd weather-xoap
+
+dev-libs/libgcrypt static-libs
+dev-libs/lzo static-libs
+
+sys-apps/pcsc-lite -udev libusb
+
+dev-libs/nss utils
+
+#required by app-office/gnucash-2.4.10, required by gnucash (argument)
+>=x11-libs/goffice-0.8.17-r1 gnome
+
+app-office/gnucash mysql postgres doc
+#required by app-office/gnucash-2.4.10[mysql], required by gnucash (argument)
+>=dev-db/libdbi-drivers-0.8.3-r2 mysql postgres
+
+net-nntp/slrn uudeview
+net-nntp/nzbget parcheck
+
+dev-lang/scala doc examples
+
+dev-lang/php pdo postgresql

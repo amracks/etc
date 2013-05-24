@@ -1,0 +1,37 @@
+media-fonts/anonymous-pro
+www-client/firefox
+mail-client/thunderbird
+mail-client/thunderbird-bin
+
+#required by googleearth (argument)
+#dev-util/patchelf
+sci-geosciences/googleearth
+
+<=app-emulation/wine-1.5.5
+www-client/google-chrome
+
+net-wireless/blueman
+sys-apps/pcsc-lite
+app-crypt/coolkey
+
+#required by dev-lang/scala (argument)
+dev-lang/scala
+
+net-misc/dropbox-cli 
+
+dev-util/android-ndk
+dev-util/android-sdk-update-manager
+
+www-apps/drupal
+
+dev-java/oracle-jdk-bin
+
+#Beets
+dev-python/munkres
+media-sound/beets
+dev-python/python-musicbrainz-ngs
+dev-python/unidecode
+
+dev-python/pysqlite
+
+app-emulation/winetricks

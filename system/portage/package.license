@@ -1,0 +1,10 @@
+app-emulation/virtualbox-additions 	    PUEL
+app-emulation/virtualbox-extpack-oracle PUEL
+dev-java/sun-jdk			            Oracle-BCLA-JavaSE
+sci-geosciences/googleearth             googleearth
+#www-plugins/adobe-flash                 AdobeFlash-10.3
+www-plugins/adobe-flash                 AdobeFlash-11.x
+sci-electronics/eagle                   cadsoft
+www-client/google-chrome                google-chrome
+www-plugins/google-talkplugin           Google-TOS
+dev-java/oracle-jdk-bin                 Oracle-BCLA-JavaSE
