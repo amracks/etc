@@ -1,0 +1,12 @@
+
+!Caps to Ctl_L
+
+remove lock = Caps_Lock
+remove control = Control_L
+keysym Caps_Lock = Control_L
+add control = Control_L
+
+remove mod4 = Super_L
+add mod1 = Super_L
+remove mod1 = Alt_R
+add mod4 = Alt_R

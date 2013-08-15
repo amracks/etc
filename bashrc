@@ -10,9 +10,11 @@ fi
 # Put your fun stuff here.
 PATH=${PATH}:~/bin
 
+XSESSION=fluxbox
+
 alias +='pushd'
 alias _='popd'
 alias d='dirs -v'
 
 export PATH
-export JBOSS_HOME=~/jboss-5.1.0.GA
+export XSESSION
