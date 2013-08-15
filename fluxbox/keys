@@ -144,7 +144,9 @@ Control Mod1 Return :Exec urxvtc -name urxvtdark
 
 XF86AudioPlay        :Exec mpc toggle
 XF86AudioForward     :Exec mpc next
+XF86AudioNext        :Exec mpc next
 XF86AudioRewind      :Exec mpc prev
+XF86AudioPrev        :Exec mpc prev
 XF86AudioRaiseVolume :Exec amixer set Master 2+
 XF86AudioLowerVolume :Exec amixer set Master 2-
 XF86AudioMute        :Exec amixer set Master toggle

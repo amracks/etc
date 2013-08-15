@@ -10,6 +10,8 @@ fi
 # Put your fun stuff here.
 PATH=${PATH}:~/bin:~/gradle-1.7/bin
 
+XSESSION=fluxbox
+
 alias +='pushd'
 alias _='popd'
 alias d='dirs -v'

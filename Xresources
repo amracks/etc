@@ -6,6 +6,8 @@ xclock*height: 48
 urxvt*loginShell: true
 urxvt*scrollBar:  false
 urxvt*font: -*-terminus-medium-*-*-*-*-140-*-*-*-*-iso8859-1
+urxvt*scrollBar_right: true
+urxvt*scrollBar_floating: true
 
 !! drop in Solarized colorscheme for Xresources
 !!
