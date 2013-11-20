@@ -54,7 +54,7 @@ urxvt*scrollBar_floating: true
 
 urxvt*background:            black
 urxvt*foreground:            S_base1
-urxvt*fading:                40
+urxvt*fading:                0
 urxvt*fadeColor:             S_base03
 urxvt*cursorColor:           S_base1
 urxvt*pointerColorBackground:S_base01

@@ -1,0 +1,14 @@
+
+# Put your fun stuff here.
+PATH=${PATH}:~/bin:~/android-sdk/tools
+EDITOR=vim
+ANDROID_HOME=~/android-sdk
+
+alias ls='ls -G'
+alias +='pushd'
+alias _='popd'
+alias d='dirs -v'
+
+export PATH
+export EDITOR
+export ANDROID_HOME
