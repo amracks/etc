@@ -24,4 +24,10 @@ set sr
 set history=50          " keep 50 lines of command history
 set ruler               " Show the cursor position all the time
 
+filetype on
+filetype plugin on
+filetype indent on
+
 set viminfo='20,\"500   " Keep a .viminfo file.
+
+execute pathogen#infect()
