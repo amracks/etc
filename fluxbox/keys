@@ -151,6 +151,9 @@ XF86AudioRaiseVolume :Exec amixer set Master 2+
 XF86AudioLowerVolume :Exec amixer set Master 2-
 XF86AudioMute        :Exec amixer set Master toggle
 
+XF86Launch8          :Exec mpc seek -20
+XF86Launch9          :Exec mpc seek +20
+
 #XF86Sleep            :Exec ~/bin/i5sleep.sh
 
 #Window Manipulation
@@ -170,7 +173,8 @@ Mod4 s      	:Stick
 167         :ExecCommand mpc next
 
 # Lock Screen
-Mod4 l          :ExecCommand alock -auth pam -bg blank:color=black
+#Mod4 l          :ExecCommand alock -auth pam -bg blank:color=black
+Mod4 l          :ExecCommand slock
 
 #Fluxbox Commands
 Mod1 Shift q :Reconfig

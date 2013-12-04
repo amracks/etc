@@ -28,6 +28,8 @@ filetype on
 filetype plugin on
 filetype indent on
 
+syntax on
+
 set viminfo='20,\"500   " Keep a .viminfo file.
 
 execute pathogen#infect()

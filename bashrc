@@ -8,7 +8,7 @@ fi
 
 
 # Put your fun stuff here.
-PATH=${PATH}:~/bin
+PATH=${PATH}:~/bin:~/gradle-1.7/bin
 
 XSESSION=fluxbox
 
@@ -16,5 +16,8 @@ alias +='pushd'
 alias _='popd'
 alias d='dirs -v'
 
+XSESSION=fluxbox
+
 export PATH
+export JBOSS_HOME=~/jboss-5.1.0.GA
 export XSESSION
