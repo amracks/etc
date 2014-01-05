@@ -32,4 +32,5 @@ syntax on
 
 set viminfo='20,\"500   " Keep a .viminfo file.
 
-execute pathogen#infect()
+"Don't know what plugin added this but its breaking everything
+"execute pathogen#infect()
