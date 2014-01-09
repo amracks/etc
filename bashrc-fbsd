@@ -4,6 +4,9 @@ PATH=${PATH}:~/bin:~/android-sdk/tools
 EDITOR=vim
 ANDROID_HOME=~/android-sdk
 
+IVY_USER=amarks
+IVY_KEYFILE=~/.ssh/id_rsa
+
 alias ls='ls -G'
 alias +='pushd'
 alias _='popd'
@@ -12,3 +15,5 @@ alias d='dirs -v'
 export PATH
 export EDITOR
 export ANDROID_HOME
+export IVY_USER
+export IVY_KEYFILE
