@@ -46,7 +46,8 @@ endif
 " Default Variable Values: {{{1
 if !exists("g:manpageview_iconv")
  if executable("iconv")
-  let s:iconv= "iconv -c"
+  "let s:iconv= "iconv -c"
+  let s:iconv= ""
  else
   let s:iconv= ""
  endif
