@@ -1,0 +1,9 @@
+set from                      = amracks@gmail.com
+set hostname                  = "gmail.com"
+set imap_user                 = 'amracks@gmail.com'
+set folder                    = "imaps://imap.gmail.com"
+set postponed                 = "=Drafts"
+set spoolfile                 = "imaps://imap.gmail.com/INBOX"
+set smtp_url                  = "smtp://smtp.gmail.com:465"
+
+source ~/.mutt/acct.amracks.pass

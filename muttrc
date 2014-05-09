@@ -6,6 +6,7 @@ reset all		# reset all variables to system defaults.
 unhook *		# remove all hooks
 
 
+auto_view   text/html
 set allow_ansi		# allow ANSI color codes in messages.
 unset arrow_cursor	# "->" as cursor (faster on slow networks).
 unset ascii_chars	# Use ASCII chars for threading arrows.
@@ -234,6 +235,21 @@ color index	 yellow	    default  ~D		# Deleted
 #set alias_file ~/.mutt/aliases
 #source ~/.mutt/aliases
 
-source ~/.mutt/acct.spawar
+
+macro index <F2> '<sync-mailbox><enter-command>source ~/.mutt/acct.spawar<enter><change-folder>!<enter>'
+macro index <F3> '<sync-mailbox><enter-command>source ~/.mutt/acct.amracks<enter><change-folder>!<enter>'
+
+folder-hook 'spawar.navy.mil' 'source ~/.mutt/acct.spawar'
+folder-hook 'gmail.com'  'source ~/.mutt/acct.amracks'
+
+set from                      = amarks@spawar.navy.mil
+set hostname                  = "spawar.navy.mil"
+set folder                    = "~/Mail/spawar/"
+set postponed                 = "~/Mail/spawar/drafts"
+set smtp_url                  = "smtp://smtp.spawar.navy.mil:25"
+set mbox                      = "~/Mail/spawar/inbox"
+set spoolfile                 = "~/Mail/spawar/inbox"
 
 
+#source ~/.mutt/acct.spawar
+#source ~/.mutt/acct.amracks
