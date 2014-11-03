@@ -24,6 +24,34 @@ Plugin 'haskell.vim'
 
 Plugin 'JavaDecompiler.vim'
 
+"Plugin 'Valloric/YouCompleteMe'
+
+Plugin 'scrooloose/syntastic'
+
+Plugin 'bling/vim-airline'
+
+Plugin 'leshill/vim-json'
+
+Plugin 'justinmk/vim-sneak'
+
+Plugin 'kien/ctrlp.vim'
+
+Plugin 'majutsushi/tagbar'
+
+Plugin 'mhinz/vim-signify'
+
+Plugin 'godlygeek/tabular'
+
+Plugin 'plasticboy/vim-markdown'
+
+Plugin 'scrooloose/nerdcommenter'
+
+Plugin 'sjl/gundo.vim'
+
+Plugin 'tpope/vim-fugitive'
+
+Plugin 'tyru/open-browser.vim'
+
 call vundle#end()
 
 filetype plugin indent on
