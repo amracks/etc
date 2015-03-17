@@ -185,55 +185,57 @@ set header_cache="~/.mutt/hdr-cache"
 #     object	 foreground	background
 #
 #color normal	 default	default	# normal text
-color indicator	 brightyellow	red	# actual message
-color tree	 brightmagenta	default	# thread arrows
-color status	 brightyellow	blue	# status line
-color error	 brightred	default	# errors
-color message	 red		default	# info messages
-color signature	 red		default	# signature
-color attachment brightyellow	default	# MIME attachments
-color search	 brightyellow	red	# search matches
-color tilde	 brightmagenta	default	# ~ at bottom of msg
-color markers	 red		default	# + at beginning of wrapped lines
-color hdrdefault blue		default	# default header lines
-color bold	 brightred	default	# hiliting bold patterns in body
-color underline	 green		default	# hiliting underlined patterns in body
-color quoted	 blue		default	# quoted text
-color quoted1	 magenta	default
-color quoted2	 red		default
-color quoted3	 green		default
-color quoted4	 cyan		default
-color quoted5	 blue		default
-color quoted6	 magenta	default
-color quoted7	 red		default
-color quoted8	 green		default
-color quoted9	 cyan		default
+#color indicator	 brightyellow	red	# actual message
+#color tree	 brightmagenta	default	# thread arrows
+#color status	 brightyellow	blue	# status line
+#color error	 brightred	default	# errors
+#color message	 red		default	# info messages
+#color signature	 red		default	# signature
+#color attachment brightyellow	default	# MIME attachments
+#color search	 brightyellow	red	# search matches
+#color tilde	 brightmagenta	default	# ~ at bottom of msg
+#color markers	 red		default	# + at beginning of wrapped lines
+#color hdrdefault blue		default	# default header lines
+#color bold	 brightred	default	# hiliting bold patterns in body
+#color underline	 green		default	# hiliting underlined patterns in body
+#color quoted	 blue		default	# quoted text
+#color quoted1	 magenta	default
+#color quoted2	 red		default
+#color quoted3	 green		default
+#color quoted4	 cyan		default
+#color quoted5	 blue		default
+#color quoted6	 magenta	default
+#color quoted7	 red		default
+#color quoted8	 green		default
+#color quoted9	 cyan		default
+##
+##     object	 foreground backg.   RegExp
+##
+#color header	 red	    default  "^(from|subject):"
+#color body	 cyan	    default  "((ftp|http|https)://|news:)[^ >)\"\t]+"
+#color body	 cyan	    default  "((ftp|http|https)://|(file|news):|www\\.)[-a-z0-9_.:]*[a-z0-9](/[^][{} \t\n\r\"<>()]*[^][{} \t\n\r\"<>().,:!])?/?"
+#color body	 cyan	    default  "[-a-z_0-9.+]+@[-a-z_0-9.]+"
+#color body	 red	    default  "(^| )\\*[-a-z0-9äöüß*]+\\*[,.?]?[ \n]"
+#color body	 green	    default  "(^| )_[-a-z0-9äöüß_]+_[,.?]?[ \n]"
+#color body	 red	    default  "(^| )\\*[-a-z0-9*]+\\*[,.?]?[ \n]"
+#color body	 green	    default  "(^| )_[-a-z0-9_]+_[,.?]?[ \n]"
 #
-#     object	 foreground backg.   RegExp
+## Colorize (German) GnuPG messages:
+##color body	 red	    default  "Korrekte Unterschrift"
+##color body	 brightyellow default  "(Öffentlicher Schlüssel nicht gefunden|keine vertrauenswürdige Signatur|Dieser Schlüssel ist verfallen)"
+##color body	 brightred   default   "FALSCHE Unterschrift"
+##color body	 brightgreen default   "nicht durch hinreichend vertrauenswürdige Signaturen zertifiziert"
 #
-color header	 red	    default  "^(from|subject):"
-color body	 cyan	    default  "((ftp|http|https)://|news:)[^ >)\"\t]+"
-color body	 cyan	    default  "((ftp|http|https)://|(file|news):|www\\.)[-a-z0-9_.:]*[a-z0-9](/[^][{} \t\n\r\"<>()]*[^][{} \t\n\r\"<>().,:!])?/?"
-color body	 cyan	    default  "[-a-z_0-9.+]+@[-a-z_0-9.]+"
-color body	 red	    default  "(^| )\\*[-a-z0-9äöüß*]+\\*[,.?]?[ \n]"
-color body	 green	    default  "(^| )_[-a-z0-9äöüß_]+_[,.?]?[ \n]"
-color body	 red	    default  "(^| )\\*[-a-z0-9*]+\\*[,.?]?[ \n]"
-color body	 green	    default  "(^| )_[-a-z0-9_]+_[,.?]?[ \n]"
-
-# Colorize (German) GnuPG messages:
-#color body	 red	    default  "Korrekte Unterschrift"
-#color body	 brightyellow default  "(Öffentlicher Schlüssel nicht gefunden|keine vertrauenswürdige Signatur|Dieser Schlüssel ist verfallen)"
-#color body	 brightred   default   "FALSCHE Unterschrift"
-#color body	 brightgreen default   "nicht durch hinreichend vertrauenswürdige Signaturen zertifiziert"
-
-uncolor index *					# unset all color index entries
-color index	 blue	    default  ~F		# Flagged
-color index	 red	    default  ~N		# New
-color index	 magenta    default  ~T		# Tagged
-color index	 yellow	    default  ~D		# Deleted
-
+#uncolor index *					# unset all color index entries
+#color index	 blue	    default  ~F		# Flagged
+#color index	 red	    default  ~N		# New
+#color index	 magenta    default  ~T		# Tagged
+#color index	 yellow	    default  ~D		# Deleted
+#
 #set alias_file ~/.mutt/aliases
 #source ~/.mutt/aliases
+#
+source ~/.mutt-colors-solarized/mutt-colors-solarized-light-16.muttrc
 
 
 macro index <F2> '<sync-mailbox><enter-command>source ~/.mutt/acct.spawar<enter><change-folder>!<enter>'
@@ -251,5 +253,5 @@ set mbox                      = "~/Mail/spawar/inbox"
 set spoolfile                 = "~/Mail/spawar/inbox"
 
 
-#source ~/.mutt/acct.spawar
+source ~/.mutt/acct.spawar
 #source ~/.mutt/acct.amracks
