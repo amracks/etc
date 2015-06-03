@@ -26,7 +26,7 @@ Plugin 'JavaDecompiler.vim'
 
 "Plugin 'Valloric/YouCompleteMe'
 
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 
 Plugin 'bling/vim-airline'
 
@@ -66,5 +66,7 @@ set history=50          " keep 50 lines of command history
 set ruler               " Show the cursor position all the time
 
 syntax on
+
+nnoremap <F5> :GundoToggle<CR>
 
 set viminfo='20,\"500   " Keep a .viminfo file.
