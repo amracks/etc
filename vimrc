@@ -10,6 +10,8 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'Align'
 
+Plugin 'LaTeX-Suite'
+
 Plugin 'pbrisbin/vim-syntax-shakespeare'
 
 Plugin 'emezeske/manpageview'
