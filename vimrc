@@ -10,8 +10,6 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'Align'
 
-Plugin 'LaTeX-Suite'
-
 Plugin 'pbrisbin/vim-syntax-shakespeare'
 
 Plugin 'emezeske/manpageview'
@@ -25,8 +23,6 @@ Plugin 'derekwyatt/vim-scala'
 Plugin 'haskell.vim'
 
 Plugin 'JavaDecompiler.vim'
-
-"Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'scrooloose/syntastic'
 
