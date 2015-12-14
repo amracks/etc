@@ -50,6 +50,8 @@ Plugin 'tpope/vim-fugitive'
 
 Plugin 'tyru/open-browser.vim'
 
+Plugin 'tfnico/vim-gradle'
+
 call vundle#end()
 
 filetype plugin indent on
