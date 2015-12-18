@@ -54,6 +54,8 @@ Plugin 'tpope/vim-fugitive'
 
 Plugin 'tyru/open-browser.vim'
 
+Plugin 'jnurmine/Zenburn'
+
 call vundle#end()
 
 filetype plugin indent on
@@ -70,5 +72,7 @@ set ruler               " Show the cursor position all the time
 syntax on
 
 nnoremap <F5> :GundoToggle<CR>
+
+colors zenburn
 
 set viminfo='20,\"500   " Keep a .viminfo file.
