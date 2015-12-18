@@ -236,7 +236,7 @@ set header_cache="~/.mutt/hdr-cache"
 #source ~/.mutt/aliases
 #
 #source ~/.mutt-colors-solarized/mutt-colors-solarized-light-16.muttrc
-#source ~/.mutt/colors-zenburn
+source ~/.mutt/colors-zenburn
 
 
 macro index <F2> '<sync-mailbox><enter-command>source ~/.mutt/acct.spawar<enter><change-folder>!<enter>'
