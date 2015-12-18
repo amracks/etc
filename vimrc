@@ -10,8 +10,6 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'Align'
 
-Plugin 'LaTeX-Suite'
-
 Plugin 'pbrisbin/vim-syntax-shakespeare'
 
 Plugin 'emezeske/manpageview'
@@ -55,6 +53,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tyru/open-browser.vim'
 
 Plugin 'jnurmine/Zenburn'
+
+Plugin 'tfnico/vim-gradle'
 
 call vundle#end()
 

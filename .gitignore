@@ -1,3 +1,6 @@
 vim/.netrwhist
 mutt/*pass
+mutt/*pass.gpg
 mutt/*p12
+mutt/hdr-cache*
+mutt/cert

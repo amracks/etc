@@ -2,9 +2,9 @@ set from                      = amarks@spawar.navy.mil
 set hostname                  = "spawar.navy.mil"
 set folder                    = "imaps://amarks@mailsd1.spawar.navy.mil/"
 set postponed                 = "=Drafts"
-set spoolfile                 = "imaps://amarks@mailsd1.spawar.navy.mil/INBOX"
+set spoolfile                 = "imaps://amarks@mail.spawar.navy.mil/INBOX"
 set smtp_url                  = "smtp://smtp.spawar.navy.mil"
 set ssl_verify_dates          = no
 set mbox                      = "~/mail/received-spawar"
 
-source ~/.mutt/acct.spawar.pass
+source "gpg -d ~/.mutt/acct.spawar.pass.gpg |"
